@@ -13,6 +13,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
+/**
+* https://www.youtube.com/watch?v=Vcnv18pe-cw
+*/
 public class AdiomantiumCraftingTable extends Block {
 
 	@SideOnly(Side.CLIENT)
