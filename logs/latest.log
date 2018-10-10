@@ -1,0 +1,36 @@
+[15:07:33] [main/INFO]: Setting user: Player899
+[15:07:36] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:07:39] [Client thread/ERROR]: Couldn't initialize twitch stream
+[15:07:56] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ExtensionMod
+[15:07:57] [Sound Library Loader/INFO]: Sound engine started
+[15:07:58] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[15:07:58] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[15:07:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ExtensionMod
+[15:07:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:08:00] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:08:00] [Sound Library Loader/INFO]: Sound engine started
+[15:08:11] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:08:11] [Server thread/INFO]: Generating keypair
+[15:08:11] [Server thread/INFO]: Preparing start region for level 0
+[15:08:12] [Server thread/INFO]: Preparing spawn area: 31%
+[15:08:13] [Server thread/INFO]: Preparing spawn area: 64%
+[15:08:14] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:08:15] [Server thread/INFO]: Player899[local:E:0857d7d1] logged in with entity id 198 at (605.3000000119209, 3.0, 277.0814894649627)
+[15:08:15] [Server thread/INFO]: Player899 joined the game
+[15:08:32] [Server thread/INFO]: Player899 has just earned the achievement [Taking Inventory]
+[15:08:32] [Client thread/INFO]: [CHAT] Player899 has just earned the achievement [Taking Inventory]
+[15:08:42] [Server thread/INFO]: [Player899: Given [Furnace] * 1 to Player899]
+[15:08:42] [Client thread/INFO]: [CHAT] Given [Furnace] * 1 to Player899
+[15:09:26] [Server thread/INFO]: Player899 has just earned the achievement [Getting Wood]
+[15:09:26] [Client thread/INFO]: [CHAT] Player899 has just earned the achievement [Getting Wood]
+[15:09:33] [Server thread/INFO]: Saving and pausing game...
+[15:09:33] [Server thread/INFO]: Saving chunks for level 'Test Flatland'/Overworld
+[15:09:33] [Server thread/INFO]: Saving chunks for level 'Test Flatland'/Nether
+[15:09:33] [Server thread/INFO]: Saving chunks for level 'Test Flatland'/The End
+[15:09:34] [Server thread/INFO]: Stopping server
+[15:09:34] [Server thread/INFO]: Saving players
+[15:09:34] [Server thread/INFO]: Saving worlds
+[15:09:34] [Server thread/INFO]: Saving chunks for level 'Test Flatland'/Overworld
+[15:09:34] [Server thread/INFO]: Saving chunks for level 'Test Flatland'/Nether
+[15:09:34] [Server thread/INFO]: Saving chunks for level 'Test Flatland'/The End
+[15:09:36] [Client thread/INFO]: Stopping!
