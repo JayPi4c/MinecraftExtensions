@@ -6,4 +6,4 @@
 !/README.md
 !build.gradle
 !/gradle.properties
-!/src/
+!src/main/
