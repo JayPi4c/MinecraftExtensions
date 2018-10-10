@@ -1,9 +1,37 @@
-*
-!.gitignore
-!src/main/
-!gradlew*
-!gradle/
-!build.gradle
-!gradle.properties
-!LICENSE.txt
-!README.md
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+config
+crash-reports
+logs
+options.txt
+usernamecache.json
+saves
+
+#!.gitignore
+#!src/main/
+#!gradlew*
+#!gradle/
+#!build.gradle
+#!gradle.properties
+#!LICENSE.txt
+#!README.md
