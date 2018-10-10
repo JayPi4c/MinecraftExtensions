@@ -5,7 +5,11 @@ import net.minecraft.block.Block;
 
 public class Apparatuses {
 
+	public static Block adiomantium_crafting_table = new AdiomantiumCraftingTable();
+	public static final int ADIOMANTIUM_CRAFTING_TABLE_GUI_ID = 42;
+
 	public static void init() {
+		registerBlocks(adiomantium_crafting_table, adiomantium_crafting_table.getUnlocalizedName());
 	}
 
 	public static void registerBlocks(Block block, String BlockName) {

@@ -26,6 +26,7 @@ item.adiomantium_bow.name=Adiomantium Bow
 item.adiomantium_core.name=Adiomantiumcore
 item.adiomantium_pickaxe_axe.name=Adiomantium Multitool
 item.adiomantium_multitoolblade.name=Mutlitoolblade
+tile.adiomantium_crafting_table.name=Adiomantium Workbench
 item.toolrod.name=Toolrod
 item.compressed_adiomantium_core_fragment.name=Compressed Adiomantium Core Fragment
 item.compressed_adiomantium_core.name=Compressed Adiomantium Core

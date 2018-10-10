@@ -1,6 +1,7 @@
-package com.JayPi4c.extensionmod.utils;
+package com.JayPi4c.extensionmod.crafting;
 
 import com.JayPi4c.extensionmod.blocks.Blocks;
+import com.JayPi4c.extensionmod.blocks.apparatuses.Apparatuses;
 import com.JayPi4c.extensionmod.items.Items;
 import com.JayPi4c.extensionmod.items.tools.Tools;
 
@@ -44,11 +45,14 @@ public class Recipes {
 		GameRegistry.addRecipe(new ItemStack(Items.adiomantium_multicore), "*#*", "#+#", "*#*", '*',
 				new ItemStack(Items.compressed_adiomantium_core_fragment), '#',
 				new ItemStack(Items.compressed_adiomantium_core), '+', new ItemStack(Items.adiomantium_core));
+		GameRegistry.addRecipe(new ItemStack(Apparatuses.adiomantium_crafting_table), "##", "##", '#',
+				new ItemStack(Blocks.adiomantium_block));
 		// smelting:
 		GameRegistry.addSmelting(Items.adiomantium_dust, new ItemStack(Items.adiomantium_ingot), 200);
 		GameRegistry.addSmelting(Items.vagonid_dust, new ItemStack(Items.vagonid_ingot), 450);
 		GameRegistry.addSmelting(Items.zagonid_dust, new ItemStack(Items.zagonid_ingot), 450);
 		GameRegistry.addSmelting(Items.adiomantium_core, new ItemStack(Items.compressed_adiomantium_core_fragment),
 				220);
+
 	}
 }
