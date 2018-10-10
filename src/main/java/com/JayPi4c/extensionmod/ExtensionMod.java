@@ -15,6 +15,14 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/**
+ * 
+ * Das ist die Hauptklasse, in der alle Items und Bl&oumlcke und so weiter
+ * registriert werden m&uumlssen.
+ * 
+ * @author JayPi4c
+ *
+ */
 @Mod(modid = ExtensionMod.MODID, name = ExtensionMod.NAME, version = ExtensionMod.VERSION)
 public class ExtensionMod {
 	public static final String MODID = "extensionmod";
