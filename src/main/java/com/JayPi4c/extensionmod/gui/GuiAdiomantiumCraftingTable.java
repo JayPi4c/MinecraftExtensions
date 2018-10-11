@@ -25,6 +25,7 @@ public class GuiAdiomantiumCraftingTable extends GuiContainer {
 
 	@Override
 	public void onGuiClosed() {
+		this.inventorySlots.onContainerClosed(this.mc.thePlayer);
 		super.onGuiClosed();
 	}
 

@@ -77,7 +77,9 @@ public class ContainerAdiomantiumCraftingTable extends Container {
 		super.onContainerClosed(player);
 
 		if (!this.worldObj.isRemote) {
-			for (int i = 0; i < 9; ++i) {
+			// für jeden Slot in der Werkbank muss überprüft werden, ob ein ItemSack in dem
+			// Slot liegt: in diesem Fall 5*5 = 25 Slots:
+			for (int i = 0; i < 25; ++i) {
 				ItemStack itemstack = this.craftMatrix.getStackInSlotOnClosing(i);
 
 				if (itemstack != null) {

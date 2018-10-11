@@ -53,4 +53,5 @@ public class AdiomantiumCraftingTable extends Block {
 		}
 		return false;
 	}
+
 }
