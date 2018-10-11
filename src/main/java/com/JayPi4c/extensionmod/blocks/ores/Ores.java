@@ -12,9 +12,9 @@ public class Ores {
 
 	public static void init() {
 		registerBlocks(adiomantium_ore, adiomantium_ore.getUnlocalizedName());
-		registerBlocks(ragonid_ore, ragonid_ore.getUnlocalizedName());
 		registerBlocks(vagonid_ore, vagonid_ore.getUnlocalizedName());
 		registerBlocks(zagonid_ore, zagonid_ore.getUnlocalizedName());
+		registerBlocks(ragonid_ore, ragonid_ore.getUnlocalizedName());
 	}
 
 	public static void registerBlocks(Block block, String BlockName) {
