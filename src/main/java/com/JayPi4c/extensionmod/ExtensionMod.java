@@ -4,6 +4,7 @@ import com.JayPi4c.extensionmod.blocks.Blocks;
 import com.JayPi4c.extensionmod.blocks.apparatuses.Apparatuses;
 import com.JayPi4c.extensionmod.blocks.ores.Ores;
 import com.JayPi4c.extensionmod.crafting.Recipes;
+import com.JayPi4c.extensionmod.dimension.Dimensions;
 import com.JayPi4c.extensionmod.handler.Handlers;
 import com.JayPi4c.extensionmod.items.Items;
 import com.JayPi4c.extensionmod.items.armors.Armors;
@@ -42,6 +43,7 @@ public class ExtensionMod {
 		Items.init();
 		Armors.init();
 		Apparatuses.init();
+		Dimensions.init();
 		GameRegistry.registerWorldGenerator(new OreGenerator(), 0);
 	}
 
