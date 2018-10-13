@@ -3,6 +3,7 @@ package com.JayPi4c.minecraftextensions.blocks.ores;
 import java.util.ArrayList;
 import java.util.Random;
 
+import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.items.Items;
 import com.JayPi4c.minecraftextensions.tabs.Tabs;
 
@@ -31,7 +32,7 @@ public class BlockOre extends Block {
 		this.setHardness(hardness);
 		this.setStepSound(Block.soundTypeStone);
 		this.setBlockName(name);
-		this.setBlockTextureName("extensionmod:" + texturename);
+		this.setBlockTextureName(MinecraftExtensions.MODID + ":" + texturename);
 		this.setCreativeTab(Tabs.tabBlocksTab);
 		this.setHarvestLevel(tooltype, level);
 	}

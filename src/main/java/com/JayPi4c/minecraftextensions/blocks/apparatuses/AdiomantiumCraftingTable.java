@@ -1,6 +1,6 @@
 package com.JayPi4c.minecraftextensions.blocks.apparatuses;
 
-import com.JayPi4c.minecraftextensions.ExtensionMod;
+import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.blocks.Blocks;
 import com.JayPi4c.minecraftextensions.tabs.Tabs;
 
@@ -40,15 +40,15 @@ public class AdiomantiumCraftingTable extends Block {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconRegister) {
-		this.blockIcon = iconRegister.registerIcon(ExtensionMod.MODID + ":adiomantium_crafting_table_side");
-		this.iconTop = iconRegister.registerIcon(ExtensionMod.MODID + ":adiomantium_crafting_table_top");
+		this.blockIcon = iconRegister.registerIcon(MinecraftExtensions.MODID + ":adiomantium_crafting_table_side");
+		this.iconTop = iconRegister.registerIcon(MinecraftExtensions.MODID + ":adiomantium_crafting_table_top");
 	}
 
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int a, float b, float c,
 			float d) {
 		if (!player.isSneaking()) {
-			player.openGui(ExtensionMod.instance, Apparatuses.ADIOMANTIUM_CRAFTING_TABLE_GUI_ID, world, x, y, z);
+			player.openGui(MinecraftExtensions.instance, Apparatuses.ADIOMANTIUM_CRAFTING_TABLE_GUI_ID, world, x, y, z);
 			return true;
 		}
 		return false;

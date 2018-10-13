@@ -25,14 +25,14 @@ import cpw.mods.fml.common.registry.GameRegistry;
  * @author JayPi4c
  *
  */
-@Mod(modid = ExtensionMod.MODID, name = ExtensionMod.NAME, version = ExtensionMod.VERSION)
-public class ExtensionMod {
+@Mod(modid = MinecraftExtensions.MODID, name = MinecraftExtensions.NAME, version = MinecraftExtensions.VERSION)
+public class MinecraftExtensions {
 	public static final String MODID = "minecraftextensions";
 	public static final String VERSION = "0.1";
 	public static final String NAME = "MinecraftExtensions";
 
 	@Instance(MODID)
-	public static ExtensionMod instance;
+	public static MinecraftExtensions instance;
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {

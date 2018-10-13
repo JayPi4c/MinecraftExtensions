@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class TabExtensionModItemsTab extends CreativeTabs {
 	public TabExtensionModItemsTab() {
-		super("ExtensionMod:_Items");
+		super("MinecraftExtensions:_Items");
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package com.JayPi4c.minecraftextensions.items.armors;
 
+import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.tabs.Tabs;
 
 import net.minecraft.entity.Entity;
@@ -27,16 +28,16 @@ public class ItemAdiomantiumArmor extends ItemArmor {
 			this.setUnlocalizedName("adiomantium_armor");
 		}
 		this.setCreativeTab(Tabs.tabArmorsTab);
-		this.setTextureName("extensionmod:" + getUnlocalizedName().substring(5));
+		this.setTextureName(MinecraftExtensions.MODID + ":" + getUnlocalizedName().substring(5));
 
 	}
 
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
 		if (slot == 0 || slot == 1 || slot == 3) {
-			return "extensionmod:textures/models/armor/adiomantium_layer_1.png";
+			return MinecraftExtensions.MODID + ":textures/models/armor/adiomantium_layer_1.png";
 		} else if (slot == 2) {
-			return "extensionmod:textures/models/armor/adiomantium_layer_2.png";
+			return MinecraftExtensions.MODID + ":textures/models/armor/adiomantium_layer_2.png";
 		} else {
 			return null;
 		}

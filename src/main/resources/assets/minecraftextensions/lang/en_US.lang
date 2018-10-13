@@ -1,10 +1,10 @@
 item.adiomantium_dust.name=Adiomantium Dust
 tile.adiomantium_ore.name=Adiomantium Ore
-itemGroup.ExtensionMod:_Blocks=ExtensionMod: Blocks
-itemGroup.ExtensionMod:_Items=ExtensionMod: Items
-itemGroup.ExtensionMod:_Food=ExtensionMod: Food
-itemGroup.ExtensionMod:_Tools=ExtensionMod: Tools
-itemGroup.ExtensionMod:_Armor=ExtensionMod: Armor
+itemGroup.MinecraftExtensions:_Blocks=MinecraftExtensions: Blocks
+itemGroup.MinecraftExtensions:_Items=MinecraftExtensions: Items
+itemGroup.MinecraftExtensions:_Food=MinecraftExtensions: Food
+itemGroup.MinecraftExtensions:_Tools=MinecraftExtensions: Tools
+itemGroup.MinecraftExtensions:_Armor=MinecraftExtensions: Armor
 item.adiomantium_ingot.name=Adiomantium Ingot
 item.orange.name=Orange
 item.adiomantium_helmet.name=Adiomantium Helmet

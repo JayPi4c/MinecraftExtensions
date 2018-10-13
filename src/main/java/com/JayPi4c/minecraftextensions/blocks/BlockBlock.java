@@ -2,6 +2,7 @@ package com.JayPi4c.minecraftextensions.blocks;
 
 import java.util.Random;
 
+import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.tabs.Tabs;
 
 import net.minecraft.block.Block;
@@ -15,7 +16,7 @@ public class BlockBlock extends Block {
 		super(material);
 		this.setStepSound(stepsound);
 		this.setBlockName(name);
-		this.setBlockTextureName("extensionmod:" + texturename);
+		this.setBlockTextureName(MinecraftExtensions.MODID + ":" + texturename);
 		this.setLightLevel(lightlevel);
 		this.setHardness(hardness);
 		this.setHarvestLevel(tooltype, level);

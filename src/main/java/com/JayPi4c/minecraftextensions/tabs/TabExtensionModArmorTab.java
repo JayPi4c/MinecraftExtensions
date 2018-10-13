@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 public class TabExtensionModArmorTab extends CreativeTabs {
 
 	public TabExtensionModArmorTab() {
-		super("ExtensionMod:_Armor");
+		super("MinecraftExtensions:_Armor");
 	}
 
 	@Override

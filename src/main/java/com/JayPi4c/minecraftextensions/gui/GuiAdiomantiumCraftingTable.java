@@ -2,7 +2,7 @@ package com.JayPi4c.minecraftextensions.gui;
 
 import org.lwjgl.opengl.GL11;
 
-import com.JayPi4c.minecraftextensions.ExtensionMod;
+import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.container.ContainerAdiomantiumCraftingTable;
 
 import net.minecraft.client.Minecraft;
@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 public class GuiAdiomantiumCraftingTable extends GuiContainer {
 
 	private ResourceLocation texture = new ResourceLocation(
-			ExtensionMod.MODID + ":" + "textures/gui/adiomantium_crafting_table.png");
+			MinecraftExtensions.MODID + ":" + "textures/gui/adiomantium_crafting_table.png");
 
 	public GuiAdiomantiumCraftingTable(InventoryPlayer invPlayer, World world, int x, int y, int z) {
 		super(new ContainerAdiomantiumCraftingTable(invPlayer, world, x, y, z));

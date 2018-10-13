@@ -2,6 +2,7 @@ package com.JayPi4c.minecraftextensions.items.tools;
 
 import java.util.Set;
 
+import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.tabs.Tabs;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
@@ -22,7 +23,7 @@ public class ItemPickaxeAxeItem extends ItemTool {
 		this.setHarvestLevel("pickaxe", material.getHarvestLevel());
 		this.setHarvestLevel("axe", material.getHarvestLevel());
 		this.setUnlocalizedName(name);
-		this.setTextureName("extensionmod:" + texturename);
+		this.setTextureName(MinecraftExtensions.MODID + ":" + texturename);
 		this.setCreativeTab(Tabs.tabToolsTab);
 	}
 
