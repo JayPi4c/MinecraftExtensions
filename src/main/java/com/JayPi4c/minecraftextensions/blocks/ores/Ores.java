@@ -11,13 +11,13 @@ public class Ores {
 	public static Block zagonid_ore = new BlockOre("zagonid_ore", "zagonid_ore", 0F, 3F, "pickaxe", 2);
 
 	public static void init() {
-		registerBlocks(adiomantium_ore, adiomantium_ore.getUnlocalizedName());
-		registerBlocks(vagonid_ore, vagonid_ore.getUnlocalizedName());
-		registerBlocks(zagonid_ore, zagonid_ore.getUnlocalizedName());
-		registerBlocks(ragonid_ore, ragonid_ore.getUnlocalizedName());
+		registerBlock(adiomantium_ore, adiomantium_ore.getUnlocalizedName());
+		registerBlock(vagonid_ore, vagonid_ore.getUnlocalizedName());
+		registerBlock(zagonid_ore, zagonid_ore.getUnlocalizedName());
+		registerBlock(ragonid_ore, ragonid_ore.getUnlocalizedName());
 	}
 
-	public static void registerBlocks(Block block, String BlockName) {
+	public static void registerBlock(Block block, String BlockName) {
 		GameRegistry.registerBlock(block, BlockName);
 	}
 }

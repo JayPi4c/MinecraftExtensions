@@ -3,7 +3,7 @@ package com.JayPi4c.minecraftextensions.blocks;
 import java.util.Random;
 
 import com.JayPi4c.minecraftextensions.MinecraftExtensions;
-import com.JayPi4c.minecraftextensions.tabs.Tabs;
+import com.JayPi4c.minecraftextensions.tabs.ExtensionsModTab;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -20,7 +20,7 @@ public class BlockBlock extends Block {
 		this.setLightLevel(lightlevel);
 		this.setHardness(hardness);
 		this.setHarvestLevel(tooltype, level);
-		this.setCreativeTab(Tabs.tabBlocksTab);
+		this.setCreativeTab(ExtensionsModTab.tabBlocks);
 	}
 
 	@Override

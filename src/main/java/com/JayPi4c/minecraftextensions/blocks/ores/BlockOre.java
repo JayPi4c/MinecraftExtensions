@@ -5,7 +5,7 @@ import java.util.Random;
 
 import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.items.Items;
-import com.JayPi4c.minecraftextensions.tabs.Tabs;
+import com.JayPi4c.minecraftextensions.tabs.ExtensionsModTab;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -33,7 +33,7 @@ public class BlockOre extends Block {
 		this.setStepSound(Block.soundTypeStone);
 		this.setBlockName(name);
 		this.setBlockTextureName(MinecraftExtensions.MODID + ":" + texturename);
-		this.setCreativeTab(Tabs.tabBlocksTab);
+		this.setCreativeTab(ExtensionsModTab.tabBlocks);
 		this.setHarvestLevel(tooltype, level);
 	}
 
@@ -65,7 +65,7 @@ public class BlockOre extends Block {
 	public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
 		if (this == Ores.ragonid_ore) {
 			Random random = new Random();
-			ArrayList<ItemStack> stack = super.getDrops(world, x, y, z, metadata, fortune);
+			ArrayList<ItemStack> stack = new ArrayList<ItemStack>();
 			stack.add(new ItemStack(Items.adiomantium_dust, random.nextInt(2)));
 			stack.add(new ItemStack(Items.vagonid_dust, random.nextInt(4)));
 			stack.add(new ItemStack(Items.zagonid_dust, random.nextInt(4)));

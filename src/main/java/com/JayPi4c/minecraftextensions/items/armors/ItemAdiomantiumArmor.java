@@ -1,7 +1,7 @@
 package com.JayPi4c.minecraftextensions.items.armors;
 
 import com.JayPi4c.minecraftextensions.MinecraftExtensions;
-import com.JayPi4c.minecraftextensions.tabs.Tabs;
+import com.JayPi4c.minecraftextensions.tabs.ExtensionsModTab;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -27,7 +27,7 @@ public class ItemAdiomantiumArmor extends ItemArmor {
 		default:
 			this.setUnlocalizedName("adiomantium_armor");
 		}
-		this.setCreativeTab(Tabs.tabArmorsTab);
+		this.setCreativeTab(ExtensionsModTab.tabArmors);
 		this.setTextureName(MinecraftExtensions.MODID + ":" + getUnlocalizedName().substring(5));
 
 	}

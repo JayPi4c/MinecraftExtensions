@@ -28,24 +28,29 @@ public class Items {
 	// miscellaneous:
 	public static Item leather_handle = new ItemItem("leather_handle", "leather_handle", 64);
 	public static Item toolrod = new ItemItem("toolrod", "toolrod", 64);
+	public static Item raw_teleporter = new ItemItem("raw_teleporter", "raw_teleporter", 64);
+
+	public static Item vazaad_dust = new ItemItem("vazaad_dust", "vazaad_dust", 64);
 
 	public static void init() {
-		registerItems(adiomantium_dust, adiomantium_dust.getUnlocalizedName());
-		registerItems(adiomantium_ingot, adiomantium_ingot.getUnlocalizedName());
-		registerItems(vagonid_dust, vagonid_dust.getUnlocalizedName());
-		registerItems(vagonid_ingot, vagonid_ingot.getUnlocalizedName());
-		registerItems(zagonid_dust, zagonid_dust.getUnlocalizedName());
-		registerItems(zagonid_ingot, zagonid_ingot.getUnlocalizedName());
-		registerItems(adiomantium_core, adiomantium_core.getUnlocalizedName());
-		registerItems(adiomantium_multicore, adiomantium_multicore.getUnlocalizedName());
-		registerItems(adiomantium_multitoolblade, adiomantium_multitoolblade.getUnlocalizedName());
-		registerItems(compressed_adiomantium_core, compressed_adiomantium_core.getUnlocalizedName());
-		registerItems(compressed_adiomantium_core_fragment, compressed_adiomantium_core_fragment.getUnlocalizedName());
-		registerItems(leather_handle, leather_handle.getUnlocalizedName());
-		registerItems(toolrod, toolrod.getUnlocalizedName());
+		registerItem(adiomantium_dust, adiomantium_dust.getUnlocalizedName());
+		registerItem(adiomantium_ingot, adiomantium_ingot.getUnlocalizedName());
+		registerItem(vagonid_dust, vagonid_dust.getUnlocalizedName());
+		registerItem(vagonid_ingot, vagonid_ingot.getUnlocalizedName());
+		registerItem(zagonid_dust, zagonid_dust.getUnlocalizedName());
+		registerItem(zagonid_ingot, zagonid_ingot.getUnlocalizedName());
+		registerItem(adiomantium_core, adiomantium_core.getUnlocalizedName());
+		registerItem(adiomantium_multicore, adiomantium_multicore.getUnlocalizedName());
+		registerItem(adiomantium_multitoolblade, adiomantium_multitoolblade.getUnlocalizedName());
+		registerItem(compressed_adiomantium_core, compressed_adiomantium_core.getUnlocalizedName());
+		registerItem(compressed_adiomantium_core_fragment, compressed_adiomantium_core_fragment.getUnlocalizedName());
+		registerItem(leather_handle, leather_handle.getUnlocalizedName());
+		registerItem(toolrod, toolrod.getUnlocalizedName());
+		registerItem(raw_teleporter, raw_teleporter.getUnlocalizedName());
+		registerItem(vazaad_dust, vazaad_dust.getUnlocalizedName());
 	}
 
-	public static void registerItems(Item Item, String ItemName) {
+	public static void registerItem(Item Item, String ItemName) {
 		GameRegistry.registerItem(Item, ItemName);
 	}
 }

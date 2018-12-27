@@ -12,6 +12,9 @@ public class Recipes {
 	public static void init() {
 		// shapeless recipe:
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.adiomantium_ingot, 9), Blocks.adiomantium_block);
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.vazaad_dust, 2), new ItemStack(Items.vagonid_dust),
+				new ItemStack(Items.vagonid_dust), new ItemStack(Items.adiomantium_dust),
+				new ItemStack(Items.zagonid_dust));
 		// recipe:
 		GameRegistry.addRecipe(new ItemStack(Blocks.adiomantium_block), "###", "###", "###", '#',
 				new ItemStack(Items.adiomantium_ingot));
@@ -47,6 +50,8 @@ public class Recipes {
 				new ItemStack(Items.compressed_adiomantium_core), '+', new ItemStack(Items.adiomantium_core));
 		GameRegistry.addRecipe(new ItemStack(Apparatuses.adiomantium_crafting_table), "##", "##", '#',
 				new ItemStack(Blocks.adiomantium_block));
+		GameRegistry.addRecipe(new ItemStack(Blocks.deko_leaves), "###", "#*#", "###", '#',
+				new ItemStack(net.minecraft.init.Blocks.leaves), '*', new ItemStack(net.minecraft.init.Blocks.fence));
 		// smelting:
 		GameRegistry.addSmelting(Items.adiomantium_dust, new ItemStack(Items.adiomantium_ingot), 200);
 		GameRegistry.addSmelting(Items.vagonid_dust, new ItemStack(Items.vagonid_ingot), 450);

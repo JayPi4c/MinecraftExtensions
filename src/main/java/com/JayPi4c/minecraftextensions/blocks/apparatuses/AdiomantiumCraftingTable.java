@@ -2,7 +2,7 @@ package com.JayPi4c.minecraftextensions.blocks.apparatuses;
 
 import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.blocks.Blocks;
-import com.JayPi4c.minecraftextensions.tabs.Tabs;
+import com.JayPi4c.minecraftextensions.tabs.ExtensionsModTab;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -27,7 +27,7 @@ public class AdiomantiumCraftingTable extends Block {
 		this.setBlockName("adiomantium_crafting_table");
 		this.setHardness(3.5F);
 		this.setResistance(5F);
-		this.setCreativeTab(Tabs.tabBlocksTab);
+		this.setCreativeTab(ExtensionsModTab.tabBlocks);
 	}
 
 	@Override

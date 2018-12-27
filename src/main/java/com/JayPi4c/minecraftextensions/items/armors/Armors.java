@@ -15,14 +15,14 @@ public class Armors {
 	public static ItemArmor ItemAdiomantiumBoots = new ItemAdiomantiumArmor(adiomantiumArmorMaterial, 0, 3);
 
 	public static void init() {
-		registerArmorItems(ItemAdiomantiumHelmet, ItemAdiomantiumHelmet.getUnlocalizedName());
-		registerArmorItems(ItemAdiomantiumChestplate, ItemAdiomantiumChestplate.getUnlocalizedName());
-		registerArmorItems(ItemAdiomantiumLeggings, ItemAdiomantiumLeggings.getUnlocalizedName());
-		registerArmorItems(ItemAdiomantiumBoots, ItemAdiomantiumBoots.getUnlocalizedName());
+		registerArmorItem(ItemAdiomantiumHelmet, ItemAdiomantiumHelmet.getUnlocalizedName());
+		registerArmorItem(ItemAdiomantiumChestplate, ItemAdiomantiumChestplate.getUnlocalizedName());
+		registerArmorItem(ItemAdiomantiumLeggings, ItemAdiomantiumLeggings.getUnlocalizedName());
+		registerArmorItem(ItemAdiomantiumBoots, ItemAdiomantiumBoots.getUnlocalizedName());
 
 	}
 
-	public static void registerArmorItems(Item Item, String ItemName) {
+	public static void registerArmorItem(Item Item, String ItemName) {
 		GameRegistry.registerItem(Item, ItemName);
 	}
 }

@@ -31,16 +31,20 @@ public class Tools {
 	public static ItemTool adiomantium_pickaxe_axe = new ItemPickaxeAxeItem("adiomantium_pickaxe_axe",
 			"adiomantium_pickaxe_axe", adiomantiumToolMaterial);
 
+	// Teleporter:
+	public static ItemTeleporter teleporter = new ItemTeleporter("teleporter", "teleporter", 1);
+
 	public static void init() {
-		registerToolItems(adiomantium_pickaxe, adiomantium_pickaxe.getUnlocalizedName());
-		registerToolItems(adiomantium_axe, adiomantium_axe.getUnlocalizedName());
-		registerToolItems(adiomantium_hoe, adiomantium_hoe.getUnlocalizedName());
-		registerToolItems(adiomantium_shovel, adiomantium_shovel.getUnlocalizedName());
-		registerToolItems(adiomantium_sword, adiomantium_sword.getUnlocalizedName());
-		registerToolItems(adiomantium_pickaxe_axe, adiomantium_pickaxe_axe.getUnlocalizedName());
+		registerToolItem(adiomantium_pickaxe, adiomantium_pickaxe.getUnlocalizedName());
+		registerToolItem(adiomantium_axe, adiomantium_axe.getUnlocalizedName());
+		registerToolItem(adiomantium_hoe, adiomantium_hoe.getUnlocalizedName());
+		registerToolItem(adiomantium_shovel, adiomantium_shovel.getUnlocalizedName());
+		registerToolItem(adiomantium_sword, adiomantium_sword.getUnlocalizedName());
+		registerToolItem(adiomantium_pickaxe_axe, adiomantium_pickaxe_axe.getUnlocalizedName());
+		registerToolItem(teleporter, teleporter.getUnlocalizedName());
 	}
 
-	public static void registerToolItems(Item Item, String ItemName) {
+	public static void registerToolItem(Item Item, String ItemName) {
 		GameRegistry.registerItem(Item, ItemName);
 	}
 }

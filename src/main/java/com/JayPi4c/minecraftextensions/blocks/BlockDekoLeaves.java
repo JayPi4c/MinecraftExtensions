@@ -7,10 +7,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
 
-public class BlockFence extends BlockBlock {
+public class BlockDekoLeaves extends BlockBlock {
 
 	// TODO: Adding Texture for FenceLeaves
-	public BlockFence(String name, String texturename, SoundType stepsound, float lightlevel, float hardness,
+	public BlockDekoLeaves(String name, String texturename, SoundType stepsound, float lightlevel, float hardness,
 			Material material, String tooltype, int level) {
 		super(name, texturename, stepsound, lightlevel, hardness, material, tooltype, level);
 	}
