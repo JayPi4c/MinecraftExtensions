@@ -1,11 +1,11 @@
 # MinecraftExtensions
 
 ### Wie kann Ich bei dem Projekt mitmachen?
-1. Erstelle einen Ordner, der als Workspace bei Eclips fungieren soll.
+1. Erstelle einen Ordner, der als Workspace bei Eclipse fungieren soll.
 2. Führe in dem neuen Ordner den git-Befehl `git clone https://github.com/JayPi4c/MinecraftExtensions.git`
 3. Führe den Befehl `./gradlew setupDecompWorkspace` aus, um Artefakte und Resourcen herunterzuladen und Minectaft zu decompilen, damit man es modden kann.
 4. Führe den Befehl `./gradlew eclispe` aus, um das Projekt für Eclipse vorzubereiten.
-5. Öffne Eclpse und nutze den eingangs erstellten Ordner als Workspace.
+5. Öffne Eclipse und nutze den eingangs erstellten Ordner als Workspace.
 6. In dem geöffneten Eclipse gehe auf File>Open Projects from Filesystem... 
 7. Klicke auf Directory... und wähle den Ordner "MinecraftExtensions" in dem Workspaceordner aus
 8. In dem Fenster sind nun zwei Projekte, welche importiert werden können. Entferne das Häckchen bei MinecraftExtensions/src und klicke auf Finish.
