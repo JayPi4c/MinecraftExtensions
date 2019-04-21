@@ -11,27 +11,29 @@ import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 
 public class ItemTeleporter extends ItemItem {
-	// the position stored in the teleporter
-	NBTTagCompound data;
 
-	protected ItemTeleporter(String name, String texturename, int stacksize) {
-		super(name, texturename, stacksize);
+	protected ItemTeleporter(String name, String texturename) {
+		super(name, texturename, 1);
 	}
 
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
 		if (!world.isRemote) {
-			data = new NBTTagCompound();
+
+			NBTTagCompound data = itemStack.getTagCompound();
+			if (data == null)
+				data = new NBTTagCompound();
 			data.setDouble("x-Pos", player.posX);
 			data.setDouble("y-Pos", player.posY);
 			data.setDouble("z-Pos", player.posZ);
+			itemStack.setTagCompound(data);
 		}
 		return itemStack;
 
 	}
 
 	/**
-	 * Dieses Item kann soll keine Bl&oumlcke zerst&oumlren k&oumlnnen, da sofort
+	 * Dieses Item kann, soll keine Bl&oumlcke zerst&oumlren k&oumlnnen, da sofort
 	 * teleportiert werden soll.
 	 */
 	@Override
@@ -41,6 +43,7 @@ public class ItemTeleporter extends ItemItem {
 
 	@Override
 	public boolean onEntitySwing(EntityLivingBase entityLiving, ItemStack stack) {
+		NBTTagCompound data = stack.getTagCompound();
 		if (data != null) {
 			entityLiving.setPositionAndRotation(data.getDouble("x-Pos"), data.getDouble("y-Pos"),
 					data.getDouble("z-Pos"), entityLiving.getRotationYawHead(), 0);

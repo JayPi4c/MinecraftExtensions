@@ -32,7 +32,7 @@ public class Tools {
 			"adiomantium_pickaxe_axe", adiomantiumToolMaterial);
 
 	// Teleporter:
-	public static ItemTeleporter teleporter = new ItemTeleporter("teleporter", "teleporter", 1);
+	public static ItemTeleporter teleporter = new ItemTeleporter("teleporter", "teleporter");
 
 	public static void init() {
 		registerToolItem(adiomantium_pickaxe, adiomantium_pickaxe.getUnlocalizedName());
