@@ -16,6 +16,7 @@ public class GuiAdiomantiumCraftingTable extends GuiContainer {
 
 	private ResourceLocation texture = new ResourceLocation(
 			MinecraftExtensions.MODID + ":" + "textures/gui/adiomantium_crafting_table.png");
+	public static final int ADIOMANTIUM_CRAFTING_TABLE_GUI_ID = 42;
 
 	public GuiAdiomantiumCraftingTable(InventoryPlayer invPlayer, World world, int x, int y, int z) {
 		super(new ContainerAdiomantiumCraftingTable(invPlayer, world, x, y, z));

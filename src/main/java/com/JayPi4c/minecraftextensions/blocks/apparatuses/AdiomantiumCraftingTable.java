@@ -2,6 +2,7 @@ package com.JayPi4c.minecraftextensions.blocks.apparatuses;
 
 import com.JayPi4c.minecraftextensions.MinecraftExtensions;
 import com.JayPi4c.minecraftextensions.blocks.Blocks;
+import com.JayPi4c.minecraftextensions.gui.GuiAdiomantiumCraftingTable;
 import com.JayPi4c.minecraftextensions.tabs.ExtensionsModTab;
 
 import cpw.mods.fml.relauncher.Side;
@@ -48,7 +49,8 @@ public class AdiomantiumCraftingTable extends Block {
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int a, float b, float c,
 			float d) {
 		if (!player.isSneaking()) {
-			player.openGui(MinecraftExtensions.instance, Apparatuses.ADIOMANTIUM_CRAFTING_TABLE_GUI_ID, world, x, y, z);
+			player.openGui(MinecraftExtensions.instance, GuiAdiomantiumCraftingTable.ADIOMANTIUM_CRAFTING_TABLE_GUI_ID,
+					world, x, y, z);
 			return true;
 		}
 		return false;

@@ -2,6 +2,8 @@ package com.JayPi4c.minecraftextensions.items.tools;
 
 import java.util.List;
 
+import com.JayPi4c.minecraftextensions.MinecraftExtensions;
+import com.JayPi4c.minecraftextensions.gui.GuiTeleporterInput;
 import com.JayPi4c.minecraftextensions.items.ItemItem;
 
 import net.minecraft.block.Block;
@@ -24,8 +26,9 @@ public class ItemTeleporter extends ItemItem {
 		NBTTagCompound data = itemStack.getTagCompound();
 		if (data == null)
 			data = new NBTTagCompound();
-
 		if (GuiScreen.isShiftKeyDown()) {
+			player.openGui(MinecraftExtensions.instance, GuiTeleporterInput.TELEPORTER_GUI_ID, world, (int) player.posX,
+					(int) player.posY, (int) player.posZ);
 			data.setString("UserInfo", "No further information stored.");
 		} else {
 			data.setDouble("x-Pos", player.posX);
@@ -34,6 +37,12 @@ public class ItemTeleporter extends ItemItem {
 		}
 		itemStack.setTagCompound(data);
 		return itemStack;
+	}
+
+	@Override
+	public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_,
+			int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_) {
+		return true;
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
