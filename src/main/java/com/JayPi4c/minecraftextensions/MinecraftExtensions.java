@@ -4,6 +4,7 @@ import com.JayPi4c.minecraftextensions.blocks.Blocks;
 import com.JayPi4c.minecraftextensions.blocks.apparatuses.Apparatuses;
 import com.JayPi4c.minecraftextensions.blocks.ores.Ores;
 import com.JayPi4c.minecraftextensions.crafting.Recipes;
+import com.JayPi4c.minecraftextensions.fluids.Fluids;
 import com.JayPi4c.minecraftextensions.handler.Handlers;
 import com.JayPi4c.minecraftextensions.items.Items;
 import com.JayPi4c.minecraftextensions.items.armors.Armors;
@@ -36,6 +37,7 @@ public class MinecraftExtensions {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		Fluids.init();
 		Ores.init();
 		Blocks.init();
 		Tools.init();
