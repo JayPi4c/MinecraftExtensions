@@ -9,11 +9,13 @@ import com.JayPi4c.minecraftextensions.handler.Handlers;
 import com.JayPi4c.minecraftextensions.items.Items;
 import com.JayPi4c.minecraftextensions.items.armors.Armors;
 import com.JayPi4c.minecraftextensions.items.tools.Tools;
+import com.JayPi4c.minecraftextensions.proxies.ServerProxy;
 import com.JayPi4c.minecraftextensions.utils.OreGenerator;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -35,6 +37,9 @@ public class MinecraftExtensions {
 	@Instance(MODID)
 	public static MinecraftExtensions instance;
 
+	@SidedProxy(clientSide = "com.JayPi4c.minecraftextensions.proxies.ClientProxy", serverSide = "com.JayPi4c.minecraftextensions.proxies.ServerProxy")
+	public static ServerProxy proxy;
+
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		Fluids.init();
@@ -45,6 +50,7 @@ public class MinecraftExtensions {
 		Armors.init();
 		Apparatuses.init();
 		GameRegistry.registerWorldGenerator(new OreGenerator(), 0);
+		proxy.registerTileEntities();
 	}
 
 	@EventHandler
